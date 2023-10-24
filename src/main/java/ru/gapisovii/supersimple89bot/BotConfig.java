@@ -1,17 +1,9 @@
 package ru.gapisovii.supersimple89bot;
 
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.PropertySource;
-
-@Configuration
-@PropertySource("classpath:application.properties")
 public class BotConfig {
-    @Value("${bot.name}")
-    private String name;
+    private String name = "SuperSimple89Bot";
 
-    @Value("${bot.ket}")
-    private String key;
+    private String key = "6712950821:AAFvxLj65vT9XeRI0DQJxPxhs8YQBj63Y00";
 
     public String getName() {
         return name;
